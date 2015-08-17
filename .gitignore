@@ -11,3 +11,7 @@
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
+
+#other files/folders
+Thumbs.db
+rsconnect
