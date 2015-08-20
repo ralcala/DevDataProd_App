@@ -71,10 +71,15 @@ body <- dashboardBody(
                     footer = "10 folds for cross-validation and 30 % for testing will be used."
                 )
             ),
-            plotOutput("result"),
-            textOutput("conf_matrix"),
-            tableOutput("table"),
-            p("Accuracy: ", textOutput("accuracy"))
+            fluidRow(
+                column(width = 8,
+                    plotOutput("result")
+                ),
+                column(width = 4,
+                    tableOutput("conf_matrix"),
+                    p(strong("Accuracy: "), textOutput("accuracy"))
+                )
+            )
         ),
         tabItem(tabName = "about",
             h2("About the app"),

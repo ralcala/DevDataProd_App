@@ -61,10 +61,6 @@ shinyServer(function(input, output) {
     })
 
     output$conf_matrix <- renderTable(
-        confusionMatrix(prediction(), iris$Species)$accuracy
-    )
-
-    output$table <- renderTable(
         tab_pred()
     )
 
