@@ -1,0 +1,9 @@
+
+.logo, .exit {
+    text-align: center;
+}
+
+#exitapp {
+    color: white;
+    background-color: maroon;
+}
